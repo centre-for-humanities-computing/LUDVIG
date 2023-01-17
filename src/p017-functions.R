@@ -103,3 +103,9 @@ read_play_jsonl <- function(file) {
 #                                      stop = str_length(file)), .before = 0)
 #     )
 # }
+
+render_all_deliverables <- function() {
+  setwd(here("deliverables"))
+  purrr::map(list.files(pattern = "\\.Rmd$"), ~rmarkdown::render(.x))
+  setwd(here())
+}
