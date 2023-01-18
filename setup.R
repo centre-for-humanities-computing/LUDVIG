@@ -1,0 +1,25 @@
+install.packages(
+  c(
+    "DT",
+    "colorspace",
+    "dplyr",
+    "fs",
+    "ggplot2",
+    "ggraph",
+    "ggthemes",
+    "here",
+    "igraph",
+    "knitr",
+    "ndjson",
+    "purrr",
+    "readr",
+    "readxl",
+    "tidygraph",
+    "tidytext",
+    "tidyverse",
+    "tvthemes",
+    "viridis",
+    "xml2",
+    "xslt"
+  )
+)

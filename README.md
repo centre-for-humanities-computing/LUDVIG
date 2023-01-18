@@ -1,9 +1,19 @@
 # LUDVIG
-Deliverables for the LUDVIG project - an analysis of the plays of Ludvig Holberg
+Deliverables for the LUDVIG project - an analysis of the plays of Ludvig Holberg.
+
+This is an RStudio project and you need to load the project by either using the "Oopen Project" menu in RStudio or double kllik on the `LUDGIV.Rproj` project file.
+
+
 
 ## Needed R packages
 
-The following R packages must be installed by `install.packages(<package>)`.
+When the project is loaded, you can install all package dependencies by running the `setup.R` file either by opening the `setup.R` file in RStudio and selecting Run or in the R console executing
+
+```
+> source("setup.R")
+```
+
+That script installes these packages:
 
 ```
 DT
