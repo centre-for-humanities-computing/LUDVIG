@@ -1,7 +1,7 @@
 # LUDVIG
 Deliverables for the LUDVIG project - an analysis of the plays of Ludvig Holberg.
 
-This is an RStudio project and you need to load the project by either using the "Oopen Project" menu in RStudio or double kllik on the `LUDGIV.Rproj` project file.
+This is an RStudio project and you need to load the project by either using the "Open Project" menu in RStudio or double kllik on the `LUDGIV.Rproj` project file.
 
 
 
