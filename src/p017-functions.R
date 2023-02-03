@@ -32,6 +32,20 @@ convert_TEI_to_JSONL <- function(folder) {
       xml_xslt(stripSeqXSL) %>%
       xml_xslt(tei2jsonlXSL) %>%
       write_file(fs::path(fs::path_ext_remove(filename), ext="jsonl")))
+  
+  # correct encoding for Windows users
+  if (Sys.info()["sysname"]=="Windows"){
+    dir_walk(
+      folder,
+      function(filename) if (str_ends(filename, ".jsonl")) read_file(filename) %>% 
+        gsub("Ã†", "Æ", .) %>%
+        gsub("Ã\230", "Ø", .) %>%
+        gsub("Ã¦", "æ", .) %>%
+        gsub("Ã¸", "ø", .) %>%
+        gsub("Ã¥", "å", .) %>%
+        # overwrite old jsonl
+        write_file(fs::path(filename))) 
+  }
 }
 
 # This function reads all JSONL files in a folder into
