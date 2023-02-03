@@ -9,7 +9,7 @@ html_notebook: default
 Import the necessary libraries
 
 ```{r message=FALSE, warning=FALSE}
-library("tidyverse")
+library(tidyverse)
 
 library(here)
 library(ndjson)
